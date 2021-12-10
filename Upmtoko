@@ -1,0 +1,68 @@
+package apptoko;
+
+import java.util.Scanner;
+
+public class upm4 {
+
+  public static void main(String[] args) {
+    /* String nama;
+    int [] array,n;
+     array = new int[100];
+     int hargaBrg, barang, total;
+     */
+    int jumlah, indeks;
+    System.out.println("APLIKASI TOKO");
+    System.out.println(">>>>>>>>>>O<<<<<<<<<<");
+    Scanner input = new Scanner(System.in);
+    System.out.print("Masukkan jumlah barang yang dibeli : ");
+    jumlah = input.nextInt();
+
+    int [] arr = new int [jumlah];
+    String [] nama = new String [jumlah];
+    int [] harga = new int [jumlah];
+    
+    for (indeks=1; indeks < jumlah; indeks++) {
+      System.out.print("Barang ke : " + indeks);
+   //   arr[indeks] = input.next();
+      System.out.print("Nama: " );
+      nama[indeks] = input.nextLine();
+      
+      System.out.print("Harga: " );
+      harga[indeks] = input.nextInt();
+      
+    }
+
+    /*
+      System.out.println(">>>>> Hasil <<<<<");
+
+
+    System.out.println("");
+    */
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
