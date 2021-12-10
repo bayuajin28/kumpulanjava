@@ -1,0 +1,25 @@
+package UasNo2;
+import java.util.Scanner;
+
+
+public class Uas2 {
+
+ public static void main(String[] args) {
+  
+int min, max;
+           
+         Scanner input = new Scanner(System.in);
+            System.out.print("Masukkan banyak nya Perulangan yang diinginkan = ");
+            min = input.nextInt(); 
+            System.out.println("\n================================================\n");
+            System.out.println("Angka yang habis dibagi 3 dan habis dibagi 5 serta tidak habis dibagi 2 adalah \n");
+            for (int i = min; i <= 100; i++) {
+                if (i % 3 == 0 && i % 5 == 0 && i % 2 !=0) {
+                    System.out.print(i + " ");
+     
+                }
+            }           
+
+ }
+
+}
