@@ -1,0 +1,68 @@
+package contoh;
+import java.util.Scanner;
+
+public class contoh {
+
+  public static void main(String[] args) {
+   String nama,kelas,grade;
+   long npm;
+   int array[], i, n;
+    array = new int[100];
+    double rata, total=0;
+
+    Scanner name = new Scanner(System.in);
+    System.out.print("Masukkan Nama Mahasiswa : ");
+    nama = name.nextLine();
+    
+    Scanner kelasmhs = new Scanner(System.in);
+    System.out.print("Masukkan Kelas : ");
+    kelas = kelasmhs.nextLine();
+    
+    Scanner npmmhs = new Scanner(System.in);
+    System.out.print("Masukkan NPM : ");
+    npm = npmmhs.nextLong();
+
+    Scanner nilai = new Scanner(System.in);
+    System.out.print("Masukkan banyaknya nilai : ");
+    n = nilai.nextInt();
+
+    for(i = 1; i <= n; i++){
+      System.out.print("Nilai Ke-"+ i +" : ");
+      array[i] = nilai.nextInt();
+      total = total + array[i];
+    }
+
+    rata = total/n;
+    
+    System.out.println(">>>>> Hasil <<<<<");
+   
+   System.out.println("Nama  : " + nama);
+   System.out.println("Kelas : " + kelas);
+   System.out.println("NPM   : " + npm);
+  
+  System.out.println("");
+   
+    System.out.println("Hasil nilai total adalah : " + total);
+    System.out.println("Hasil rata-rata adalah : " + rata);
+   
+   if ( rata >= 90 ) {
+            grade = "A (Lulus)";
+        } else if ( rata >= 80 ){
+            grade = "B+ (Lulus)";
+        } else if ( rata >= 70 ){
+            grade = "B (Lulus)";
+        } else if ( rata >= 60 ){
+            grade = "C+ (Lulus)";
+        } else if ( rata >= 50 ){
+            grade = "C ( Disarankan mengulang )";
+        } else if ( rata >= 40 ){
+            grade = "D ( Wajib Mengulang)";
+        } else {
+            grade = "E ( SANGAT WAJIB MENGULANG)";
+        }
+    System.out.print("Keterangan = " + grade);  
+   
+  }
+}
+
+
